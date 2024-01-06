@@ -1,0 +1,545 @@
+.header {
+  background-image: url("/src/assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.wrap-content-header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.content-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header-heading {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  gap: 10px 0;
+  align-items: center;
+  width: 100%;
+  /* display: flex;
+  justify-content: space-between; */
+  padding-top: 50px;
+  margin-bottom: 30px;
+  margin: 0 auto;
+  font-size: var(--font--size--big);
+}
+
+.button-check-status {
+  display: none;
+}
+
+.logo-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.line-header {
+  max-width: 80px;
+  width: 100%;
+  height: 3px;
+  margin-top: 8px;
+}
+
+.title-logo-header {
+  font-size: 18px;
+  margin-right: 10px;
+  width: 100%;
+  padding-top: 6px;
+  color: var(--text--color--primary);
+}
+
+.border-medium {
+  border-radius: 10px;
+}
+
+.border-large {
+  border-radius: 20px;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.header-nav {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  transform: translateY(100%);
+  grid-column: span 2;
+  justify-self: end;
+  display: none;
+  margin-top: 7px;
+  width: 100%;
+  background : var(--background--color--four);
+}
+
+.toggle-input:checked~.header-nav {
+  display: block;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: var(--text--color--primary);
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.links {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 10px;
+  display: block;
+  text-decoration: none;
+  color: var(--text--collor--third);
+  font-weight: 500;
+  font-size: var(--font--size--large);
+  text-align: right;
+}
+
+.links:hover {
+  color: var(--text--collor--four);
+  cursor: pointer;
+  /* font-size: var(--font--size--big); */
+  font-weight: 800;
+}
+
+.toggle-icon {
+  cursor: pointer;
+}
+
+.title-header {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text--color--second);
+}
+
+.heading-header {
+  color: var(--text--color--primary);
+}
+
+.description-header {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--font--size--sm);
+  height: 51px;
+}
+
+.button-header {
+  width: 100%;
+  max-width: 295px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.get-vaccine {
+  padding: 17px 25px;
+  height: 50px;
+}
+
+.help-centre {
+  padding: 16px 23px;
+}
+
+.image-header {
+  position: relative;
+  max-width: 306px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doctor-avatar {
+  position: absolute;
+  left: 0;
+  padding: 8px 5px;
+  background: var(--text--color--primary);
+  box-shadow: var(--box-shadow--color--primary);
+  max-width: 50px;
+  height: 50px;
+  width: 100%;
+}
+
+.image-doctor-avatar {
+  height: 33px;
+  width: 100%;
+}
+
+.corona-virus {
+  position: absolute;
+  right: 0;
+  background: var(--text--color--primary);
+  box-shadow: var(--box-shadow--color--primary);
+  padding: 7px 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.image-corona-header {
+  height: 37px;
+  width: 100%;
+}
+
+.class-doctor {
+  display: flex;
+  position: absolute;
+  bottom: -17px;
+  background: rgba(196, 196, 196, 0.2);
+  box-shadow: var(--box--shadow-color);
+  width: 100%;
+  height: 70px;
+  padding: 15px;
+  margin-left: -70px;
+  max-width: 238px;
+}
+
+.specialist {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  right: 18px;
+  max-width: 81px;
+  width: 100%;
+  height: 40px;
+  font-size: var(--font--size--sm);
+  color: var(--text--color--primary);
+}
+
+.image-three-doctor {
+  max-width: 108px;
+  width: 100%;
+  height: 39px;
+  display: flex;
+}
+
+.name-list {
+  color: var(--text--color--second);
+}
+
+.clock-image {
+  padding-top: 43px;
+  padding-bottom: 25px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.clock-wrap {
+  padding: 5px;
+  background: var(--background--color--primary);
+  max-width: 30px;
+  width: 100%;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.content-clock {
+  width: 100%;
+  height: 17px;
+  font-size: var(--font--size--sm);
+  align-items: center;
+  color: var(--text--color--primary);
+}
+
+.address-header {
+  font-size: var(--font--size--sm);
+  border-radius: 20px 20px 0px 0px;
+  background: var(--background--color--primary);
+  padding-left: 10px;
+  padding-top: 20px;
+  box-shadow: -1px -10px rgba(196, 196, 196, 0.05);
+  color: var(--text--color--primary);
+  cursor: pointer;
+}
+
+.name-address {
+  color: var(--text--collor--third);
+  font-size: var(--font--size--sm);
+  font-weight: 600;
+  height: 17px;
+}
+
+.wrap-image-header {
+  background: var(--background--color--primary);
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.image-address-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.wrap-address-header-text {
+  width: 100%;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.content-address-header {
+  max-width: 147px;
+  width: 100%;
+  height: 34px;
+  position: relative;
+}
+
+.submit-header {
+  width: 150px;
+  padding: 20px 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-header {
+    max-width: 370px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+  }
+  .wrap-content-header {
+    margin-top: 50px;
+  }
+  .button-header .get-vaccine,
+  .button-header .help-centre {
+    max-width: 175px;
+    width: 100%;
+    height: 64px;
+    border-radius: 20px;
+  }
+
+  .title-logo-header {
+    width: 100%;
+    height: 32px;
+    font-size: 26px;
+  }
+
+  .title-header {
+    font-size: var(--font--size--large);
+  }
+
+ .heading-header {
+    width: 100%;
+    /* font-size: var(--font--size--vrbig); */
+    font-size: 36px;
+  }
+  .content-header {
+    max-width: 502px;
+    gap: 40px;
+  }
+
+  .description-header {
+    font-size: var(--font--size--large);
+    width: 100%;
+    height: 48px;
+  }
+
+  .image-header {
+    width: 100%;
+    max-width: 622px;
+  }
+
+  .image-corona-vaccine-header {
+    height: 571px;
+    width: 100%;
+  }
+
+  .doctor-avatar,
+  .corona-virus {
+    max-width: 100px;
+    height: 100px;
+    width: 100%;
+    padding: 17px 10px;
+  }
+
+  .image-doctor-avatar,
+  .image-corona-header {
+    width: 100%;
+    height: 66px;
+  }
+
+  .class-doctor {
+    max-width: 374px;
+    width: 100%;
+    height: 100px;
+    bottom: -17px;
+    box-shadow: 0 4px 4px #0000001a;
+    margin-left: -244px;
+    padding: 20px;
+  }
+
+  .image-three-doctor {
+    max-width: 167px;
+    width: 100%;
+    height: 60px;
+  }
+
+  .specialist {
+    max-width: 100%;
+    max-width: 134px;
+    height: 51px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 134px;
+    height: 51px;
+    font-size: var(--font--size--big);
+  }
+
+  .clock-wrap {
+    max-width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+
+  .content-clock {
+    font-size: var(--font--size--big);
+    max-width: 336px;
+    width: 100%;
+  }
+
+  .address-image {
+    width: 50px;
+    height: 50px;
+    flex: 0 0 auto;
+  }
+
+  .wrap-image-header {
+    max-width: 50px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .address-header {
+    padding: 37px 0 1px 12px;
+    display: flex;
+  }
+
+  .wrap-address-header-text {
+    display: flex;
+    align-items: center;
+    width: calc(100% / 2);
+    justify-content: space-around;
+    margin-bottom: 45px;
+  }
+
+  .content-address-header {
+    max-width: 247px;
+    width: 100%;
+    font-size: var(--font--size--large);
+  }
+
+  .submit-header {
+    max-width: 253px;
+    width: 100%;
+    padding: 20px 25px;
+    height: 64px;
+    font-size: var(--font--size--large);
+    margin-left: -60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .header-heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wrap-content-header {
+    margin-top: 100px;
+  }
+
+  .title-logo-header {
+    margin-right: 150px;
+    font-size: var(--font--size--vrbig);
+    height: 40px;
+  }
+
+  .toggle-icon {
+    display: none;
+  }
+
+  .header-nav {
+    position: static;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    transform: none;
+    background-color: transparent;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 0 23px;
+    justify-content: space-between;
+    max-width: 500px;
+    align-items: center;
+  }
+
+  .title-header {
+    font-size: var(--font--size--big);
+  }
+
+  .description-header {
+    font-size: var(--font--size--large);
+    max-width: 505px;
+    width: 100%;
+    height: 58px;
+  }
+
+  .button-header {
+    max-width: 420px;
+    width: 100%;
+    padding-top: 100px;
+  }
+
+  .image-address-header {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .button-check-status {
+    display: block;
+    border-radius: 20px;
+    background: var(--background--color--primary);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+    max-width: 220px;
+    width: 100%;
+    border: none;
+    font-size: var(--font--size--big);
+    padding: 20px 26px;
+  }
+
+  .button-check-status:hover {
+    background-color: var(--background--color--five);
+    cursor: pointer;
+  }
+  .button-check-status-links {
+    text-decoration: none;
+    color: var(--text--color--primary);
+    font-size: var(--font--size--large);
+  }
+}

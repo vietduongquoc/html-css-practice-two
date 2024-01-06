@@ -1,0 +1,14 @@
+.input {
+  border-radius: 10px;
+  color: var(--text--color--primary);
+  font-weight: 500;
+  /* border: none; */
+}
+
+.input:hover {
+  border-radius: 10px;
+  border: var(--border--color--third);
+  color: var(--text--color--second);
+  cursor: pointer;
+}
+
